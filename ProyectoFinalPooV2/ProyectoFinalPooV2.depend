@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1733673946 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/main.cpp
+	"Admin.h"
+	<iostream>
+
+1733673885 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Admin.h
+	"Estudiante.h"
+	"Docente.h"
+	"Padre.h"
+	"Grupo.h"
+	<vector>
+	<map>
+
+1733673774 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Estudiante.h
+	"Persona.h"
+	<vector>
+
+1733673763 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Persona.h
+	<string>
+	<iostream>
+
+1733673763 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Docente.h
+	"Persona.h"
+
+1733673885 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Padre.h
+	"Persona.h"
+
+1733673885 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Grupo.h
+	"Estudiante.h"
+	<map>
+
