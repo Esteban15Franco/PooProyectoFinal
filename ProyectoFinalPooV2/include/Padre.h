@@ -8,7 +8,7 @@ public:
     Padre(int id, string nombre, string telefono)
         : Persona(id, nombre, telefono) {}
 
-    void mostrarInfo() const override;
+    void mostrarInfo() override;
 };
 
 #endif // PADRE_H

@@ -1,11 +1,10 @@
 #include "Grupo.h"
+#include <iostream>
+using namespace std;
 
-Grupo::Grupo()
-{
-    //ctor
-}
-
-Grupo::~Grupo()
-{
-    //dtor
+void Grupo::mostrarEstudiantes() {
+    cout << "Grupo: " << nombre << endl;
+    for (auto& estudiante : estudiantes) {
+        estudiante->mostrarInfo();
+    }
 }

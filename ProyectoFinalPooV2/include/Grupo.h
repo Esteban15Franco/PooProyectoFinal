@@ -2,16 +2,32 @@
 #define GRUPO_H
 
 #include "Estudiante.h"
-#include <map>
+#include <vector>
+#include <string>
+using namespace std;
 
 class Grupo {
 private:
-    map<int, Estudiante*> estudiantes;
+    string nombre;
+    vector<Estudiante*> estudiantes;
+    static const int MAX_ESTUDIANTES = 100;
+    int contadorEstudiantes = 0;
 
 public:
-    void agregarEstudiante(Estudiante* estudiante);
-    void mostrarEstudiantes() const;
-    void mostrarHistorialAsistencia(int id) const;
+    Grupo(string nombre) : nombre(nombre) {}
+
+    bool agregarEstudiante(Estudiante* estudiante) {
+        if (contadorEstudiantes < MAX_ESTUDIANTES) {
+            estudiantes.push_back(estudiante);
+            contadorEstudiantes++;
+            return true;
+        }
+        return false;
+    }
+
+    void mostrarEstudiantes();
+
+    string getNombre() { return nombre; }
 };
 
 #endif // GRUPO_H

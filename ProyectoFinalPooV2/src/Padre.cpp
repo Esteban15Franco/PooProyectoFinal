@@ -1,11 +1,7 @@
 #include "Padre.h"
+#include <iostream>
+using namespace std;
 
-Padre::Padre()
-{
-    //ctor
-}
-
-Padre::~Padre()
-{
-    //dtor
+void Padre::mostrarInfo() {
+    cout << "ID: " << id << ", Nombre: " << nombre << ", Teléfono: " << telefono << endl;
 }

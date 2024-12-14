@@ -2,13 +2,11 @@
 #define ESTUDIANTE_H
 
 #include "Persona.h"
-#include <vector>
 
 class Estudiante : public Persona {
 private:
     int edad;
     string grupo;
-    vector<string> historialAsistencia;
 
 public:
     Estudiante(int id, string nombre, string telefono, int edad)
@@ -17,10 +15,10 @@ public:
     }
 
     void asignarGrupo();
-    void registrarAsistencia(const string& fecha);
-    void mostrarHistorialAsistencia() const;
-    void mostrarInfo() const override;
+    string getGrupo() { return grupo; }
+    int getEdad() { return edad; }
+
+    void mostrarInfo();
 };
 
 #endif // ESTUDIANTE_H
-

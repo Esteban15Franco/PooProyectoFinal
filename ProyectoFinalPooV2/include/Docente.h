@@ -5,13 +5,15 @@
 
 class Docente : public Persona {
 private:
-    string area;
+    string especialidad;
 
 public:
-    Docente(int id, string nombre, string telefono, string area)
-        : Persona(id, nombre, telefono), area(area) {}
+    Docente(int id, string nombre, string telefono, string especialidad) // Sin const ni &
+        : Persona(id, nombre, telefono), especialidad(especialidad) {}
 
-    void mostrarInfo() const override;
+    string getEspecialidad() { return especialidad; } // Sin const
+
+    void mostrarInfo(); // Sin const
 };
 
 #endif // DOCENTE_H

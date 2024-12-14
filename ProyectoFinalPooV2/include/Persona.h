@@ -2,7 +2,6 @@
 #define PERSONA_H
 
 #include <string>
-#include <iostream>
 using namespace std;
 
 class Persona {
@@ -15,12 +14,10 @@ public:
     Persona(int id, string nombre, string telefono)
         : id(id), nombre(nombre), telefono(telefono) {}
 
-    virtual void mostrarInfo() const = 0;
-
-    int getId() const { return id; }
-    string getNombre() const { return nombre; }
-    string getTelefono() const { return telefono; }
+    virtual void mostrarInfo() = 0; // Hacemos que no sea const
+    int getId() { return id; }
+    string getNombre() { return nombre; }
+    string getTelefono() { return telefono; }
 };
 
 #endif // PERSONA_H
-
