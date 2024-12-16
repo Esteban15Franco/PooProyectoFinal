@@ -14,7 +14,7 @@ public:
     Persona(int id, string nombre, string telefono)
         : id(id), nombre(nombre), telefono(telefono) {}
 
-    virtual void mostrarInfo() = 0; // Hacemos que no sea const
+    virtual void mostrarInfo() = 0;
     int getId() { return id; }
     string getNombre() { return nombre; }
     string getTelefono() { return telefono; }

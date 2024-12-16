@@ -13,8 +13,10 @@ void mostrarMenu() {
     cout << "5. Mostrar estudiantes por grupo\n";
     cout << "6. Registrar asistencia\n";
     cout << "7. Mostrar historial de asistencia\n";
-    cout << "8. Exportar datos a CSV\n";
-    cout << "9. Salir\n";
+    cout << "8. Exportar datos de los estudiantes a CSV\n";
+    cout << "9. Exportar datos de los docentes a CSV\n";
+    cout << "10. Exportar datos de los padres a CSV\n";
+    cout << "11. Salir\n";
     cout << "Seleccione una opción: ";
 }
 
@@ -111,13 +113,23 @@ int main() {
             admin.exportarDatosCSV();
             break;
         }
-        case 9:
+
+        case 9: {
+            admin.exportarDatosCSV2();
+            break;
+        }
+
+        case 10: {
+            admin.exportarDatosCSV3();
+        }
+
+        case 11:
             cout << "Saliendo del sistema...\n";
             break;
         default:
             cout << "Opción no válida. Intente nuevamente.\n";
         }
-    } while (opcion != 9);
+    } while (opcion != 11);
 
     return 0;
 }

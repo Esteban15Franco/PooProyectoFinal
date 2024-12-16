@@ -3,27 +3,21 @@
 
 #include "Estudiante.h"
 #include <vector>
+#include <memory>
 #include <string>
 using namespace std;
 
 class Grupo {
 private:
     string nombre;
-    vector<Estudiante*> estudiantes;
+    vector<shared_ptr<Estudiante>> estudiantes;
     static const int MAX_ESTUDIANTES = 100;
     int contadorEstudiantes = 0;
 
 public:
     Grupo(string nombre) : nombre(nombre) {}
 
-    bool agregarEstudiante(Estudiante* estudiante) {
-        if (contadorEstudiantes < MAX_ESTUDIANTES) {
-            estudiantes.push_back(estudiante);
-            contadorEstudiantes++;
-            return true;
-        }
-        return false;
-    }
+    bool agregarEstudiante(shared_ptr<Estudiante>& estudiante);
 
     void mostrarEstudiantes();
 

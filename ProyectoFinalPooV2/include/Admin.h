@@ -10,14 +10,15 @@
 #include <map>
 #include <memory>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
 class Admin {
 private:
-    vector<unique_ptr<Estudiante>> estudiantes;
-    vector<unique_ptr<Docente>> docentes;
-    vector<unique_ptr<Padre>> padres;
+    vector<shared_ptr<Estudiante>> estudiantes;
+    vector<shared_ptr<Docente>> docentes;
+    vector<shared_ptr<Padre>> padres;
     map<string, Grupo> grupos;
     Asistencia asistencia;
 
@@ -34,6 +35,9 @@ public:
     void mostrarGrupo(string nombreGrupo);
 
     void exportarDatosCSV();
+    void exportarDatosCSV2();
+    void exportarDatosCSV3();
+
 };
 
 #endif // ADMIN_H

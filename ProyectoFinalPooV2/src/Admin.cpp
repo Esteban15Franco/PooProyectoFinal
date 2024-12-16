@@ -1,24 +1,31 @@
 #include "Admin.h"
 #include <iostream>
+#include <map>
 using namespace std;
 
 Admin::Admin() {
-    grupos["Párvulos"] = Grupo("Párvulos");
-    grupos["Pre-jardín"] = Grupo("Pre-jardín");
-    grupos["Jardín"] = Grupo("Jardín");
+    grupos = {
+    {"Párvulos", Grupo("Párvulos")},
+    {"Pre-jardín", Grupo("Pre-jardín")},
+    {"Jardín", Grupo("Jardín")}
+    };
+
 }
 
 void Admin::agregarEstudiante(int id, string nombre, string telefono, int edad) {
     // Crear un nuevo estudiante
-    unique_ptr<Estudiante> estudiante = make_unique<Estudiante>(id, nombre, telefono, edad);
+    shared_ptr<Estudiante> estudiante = make_shared<Estudiante>(id, nombre, telefono, edad);
 
     // Obtener el grupo del estudiante
+    estudiante->asignarGrupo();
     string grupo = estudiante->getGrupo();
 
+    map<string, Grupo>::iterator pos = grupos.find(grupo);
     // Verificar si el grupo existe
-    if (grupos.find(grupo) != grupos.end()) {
+    if (pos != grupos.end()) {
+
         // Agregar el estudiante al grupo
-        grupos[grupo].agregarEstudiante(estudiante.get());
+        pos->second.agregarEstudiante(estudiante);
         // Mover el estudiante a la lista de estudiantes
         estudiantes.push_back(move(estudiante));
     } else {
@@ -63,5 +70,13 @@ void Admin::mostrarHistorialAsistencia(int id) {
 
 // Implementar el método para exportar datos a CSV
 void Admin::exportarDatosCSV() {
-    CSVManager::exportarEstudiantes(estudiantes, "estudiantes.csv");
+   CSVManager::exportarEstudiantes(estudiantes, "Estudiantes.csv");
+}
+
+void Admin::exportarDatosCSV2() {
+    CSVManager::exportarDocentes(docentes, "Docentes.csv");
+}
+
+void Admin::exportarDatosCSV3() {
+    CSVManager::exportarPadres(padres, "Padres.csv");
 }

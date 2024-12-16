@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1733871514 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/main.cpp
+1734308618 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/main.cpp
 	<iostream>
 	<vector>
 	"Admin.h"
 
-1734211447 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Admin.h
+1734306994 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Admin.h
 	"Estudiante.h"
 	"Docente.h"
 	"Padre.h"
@@ -14,61 +14,145 @@
 	<map>
 	<memory>
 	<vector>
+	<iostream>
 
-1734209142 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Estudiante.h
+1734212405 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Estudiante.h
 	"Persona.h"
 
-1734208232 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Persona.h
+1734300816 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Persona.h
 	<string>
 
-1734209579 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Docente.h
+1734212405 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Docente.h
 	"Persona.h"
 
-1734208472 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Padre.h
+1734212405 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Padre.h
 	"Persona.h"
 
-1734209662 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Grupo.h
+1734225383 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Grupo.h
 	"Estudiante.h"
 	<vector>
+	<memory>
 	<string>
 
-1733688318 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Admin.cpp
+1734307695 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Admin.cpp
 	"Admin.h"
 	<iostream>
+	<map>
 
-1734209268 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Estudiante.cpp
+1734212405 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Estudiante.cpp
 	"Estudiante.h"
 	<iostream>
 
-1734209650 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Docente.cpp
+1734212405 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Docente.cpp
 	"Docente.h"
 	<iostream>
 
-1734208924 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Padre.cpp
+1734212405 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Padre.cpp
 	"Padre.h"
 	<iostream>
 
-1734211447 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Grupo.cpp
+1734225341 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Grupo.cpp
 	"Grupo.h"
 	<iostream>
 
-1734211447 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Asistencia.cpp
+1734212405 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Asistencia.cpp
 	"Asistencia.h"
 	<iostream>
 
-1734210123 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Asistencia.h
+1734212405 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/Asistencia.h
 	<map>
 	<string>
 	<vector>
 
-1734211447 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/CSVManager.cpp
+1734306964 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/CSVManager.cpp
 	"CSVManager.h"
 	<fstream>
 	<iostream>
 
-1734209771 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/CSVManager.h
+1734301029 /home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/include/CSVManager.h
 	<vector>
 	<string>
 	<fstream>
+	<memory>
 	"Estudiante.h"
+	"Docente.h"
+	"Padre.h"
+
+1734216440 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/main.cpp
+	<iostream>
+	<vector>
+	"Admin.h"
+
+1734224213 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Admin.h
+	"Estudiante.h"
+	"Docente.h"
+	"Padre.h"
+	"Grupo.h"
+	"Asistencia.h"
+	"CSVManager.h"
+	<map>
+	<memory>
+	<vector>
+	<iostream>
+
+1734212405 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Estudiante.h
+	"Persona.h"
+
+1734212405 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Persona.h
+	<string>
+
+1734212405 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Docente.h
+	"Persona.h"
+
+1734212405 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Padre.h
+	"Persona.h"
+
+1734225383 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Grupo.h
+	"Estudiante.h"
+	<vector>
+	<memory>
+	<string>
+
+1734212405 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/Asistencia.h
+	<map>
+	<string>
+	<vector>
+
+1734215638 /home/job/PooProyectoFinal/ProyectoFinalPooV2/include/CSVManager.h
+	<vector>
+	<string>
+	<fstream>
+	<memory>
+	"Estudiante.h"
+
+1734217523 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Admin.cpp
+	"Admin.h"
+	<iostream>
+
+1734212405 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Asistencia.cpp
+	"Asistencia.h"
+	<iostream>
+
+1734216418 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/CSVManager.cpp
+	"CSVManager.h"
+	<fstream>
+	<iostream>
+
+1734212405 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Docente.cpp
+	"Docente.h"
+	<iostream>
+
+1734212405 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Estudiante.cpp
+	"Estudiante.h"
+	<iostream>
+
+1734225341 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Grupo.cpp
+	"Grupo.h"
+	<iostream>
+
+1734212405 source:/home/job/PooProyectoFinal/ProyectoFinalPooV2/src/Padre.cpp
+	"Padre.h"
+	<iostream>
+
+1734323612 source:/home/juanes/Documentos/Programacion/c++/PooF/ProyectoFinalPooV2/src/Factura.cpp
 
